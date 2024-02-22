@@ -40,6 +40,11 @@ ol, ul{
 a {
     text-decoration: none;
 }
+
+.geeting{
+    background-color: #d9b99b;
+
+}
 /* Esto es el estilo de la imagen y parrafo principal*/
 .acerca-imagen {
     display: flex;
