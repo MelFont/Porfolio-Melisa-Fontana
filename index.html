@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Melisa Fontana - Resume </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8b0d627932.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" async defer></script> 
+</head>
+
+<body>
+    <div class="container">
+        <header>
+           
+            <a href="index.html"><i class="fa-solid fa-shield-cat fa.2xl"></i></a>
+            <p>Melisa Fontana</p>
+            <nav>
+             <input type="checkbox" id="check" />
+              <label for="check" class="checkbtn">
+               <i class="fa-solid fa-bars"></i>
+              </label>
+                 <ul>
+                  <li> <a href="index.html">Inicio</a></li>
+                  <li> <a href="acerca-de">Sobre mi</a></li>
+                  <li> <a href="#trabajos">Trayectoria</a></li>
+                  <li> <a href="#trabajos">Experiencias</a></li>
+                  <li> <a href="#contacto">Contacto</a></li>
+                 </ul>
+            </nav>
+        </header>
+    
+        <main id="seccion-principal">
+
+            <section class="section-1">
+                <div class="acerca-de">
+                    <h2 class="logo">Sobre mi</h2>
+                    <p class="parrafo1">Presentación</p>
+                    <p class="parrafo2">Mi nombre es Melisa, tengo 26 años. Soy de Paysandú-Uruguay. Soy Licenciada en Psicologia y me interesa mucho el mundo IT.</p>
+                    <button>Ver más <a href="Mas info"></a></button>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/Personal.JPG" alt="imagen personal" width="200" height="300">
+                </div>
+            </section>
+
+            <section class="section-2">
+                <img src="img/Random.jpg" alt="imagen de carrusel">
+            </section>
+            
+            <section class="flex-container">
+                    <div class="caja">
+                        <img src="img/Salud Mental.jpg" alt="Psicologia" width="50%" height="40%">
+                        <h3> Carrera </h3>
+                        <p>Licenciatura 
+                            en 
+                           Psicologia 
+                            2016-2021 
+                            </p>
+                            <button>Saber más</button>
+                    </div>
+                    <div class="caja">
+                        <img src="img/Cursos.jpg" alt="Cursos" width="50%" height="40%">
+                        <h3> Cursos </h3>
+                        <p> Costura 2022 - 2023  
+                            Reposteria 2022 - 2023           
+                        </p>
+                        <button>Saber más</button>
+                    </div>
+            </section>
+        </main>
+
+        <footer class="form-header">
+            <h1>Contacto</h1>
+            <p><em>¡Esperamos tu consulta!</em></p>
+      
+            <form action="" method="get" class="formulario" id="form">
+              <div class="form-row">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" />
+                </div>
+      
+                <div class="form-row">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="JuliaRoberts@gmail.com"
+                    required
+                  />
+                </div>
+      
+                <div class="form-row">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+      
+                <div class="form-row">
+                  <button>Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"> </p>
+            </form>
+            
+          </footer>
+          <script src="script.js"></script>
+
+        <footer>
+            <h3>Contacto</h3>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/melisa-fontana/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/melisa-fontana/"> Mi linkedin  </a>     
+                </li>
+                <li>
+                    <a href=mailto:meli41440@hotmail.com><i class="fa-regular fa-envelope"></i></a>
+                    <a href=mailto:meli41440@hotmail.com>Correo</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html>

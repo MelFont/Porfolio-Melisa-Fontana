@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+  }
+
+  /* Esto es el estilo de la pagina*/
+
+body {
+    background-color: rgb(74, 73, 73);
+    font-family: 'Playfair Display', serif;
+}
+
+ /* Esto es el estilo del menu*/
+
+header{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.726);
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+footer{
+    background-color: #d9b99b;
+    align-items: center;
+}
+
+ul{
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover {
+    color: #3e0432;
+}
+nav ul{
+    display: flex;
+    gap: 1.2em;
+}
+ol, ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* Esto es el estilo de la imagen y parrafo principal*/
+.acerca-imagen {
+    display: flex;
+    justify-content: center;
+}
+.acerca-imagen img {
+    border-radius: 80px 20px;
+}
+
+body header p{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+body header a p{
+    position: relative;
+}
+body header p{
+    color: rgb(196, 188, 170);
+}
+
+.section-1{
+    background-color: rgb(172, 169, 138);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.section-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.acerca-de{
+    width: 30%;
+    height: 30%;
+}
+
+.acerca-de .parrafo2{
+        color: #eae7e9;
+        align-items: baseline;
+}
+
+/* Esto es el estilo de las dos cajas*/
+
+
+/* Esto es el estilo de los textos dos cajas*/
+
+.caja img{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    width:100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.caja p{
+    margin-left: 20%;
+    margin-right: 20%;
+    vertical-align: middle;
+    text-align: left;
+    white-space: pre-line;
+}
+
+/* Esto es el estilo de las imagenes dos cajas*/
+
+body main .caja img{
+    border-radius: 20px 20px 20px 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 300px;
+    }
+    
+.caja {
+    width: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    }
+
+/* Media Query para ser responsive*/
+
+.container{
+    font-size: 16px;
+    background-color: rgb(74, 73, 73);
+}
+
+/* MENU tres lineas "hamburguesa" */
+
+#check {
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: rgb(197, 203, 135);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+
+@media (max-width: 767px) {
+    header{
+        background-color: rgb(49, 49, 49);
+        height: 45px;
+    }
+    .acerca-de{
+        text-align: center;
+    }
+    .acerca-imagen{
+        margin-bottom: 40px;
+    }
+
+    .acerca-de h2{
+        text-align: center;
+    }
+    footer{
+        height: 40px;
+    }
+
+    .container{
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+    }
+    .checkbtn{
+        display:block
+    }
+    .container ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;  /* vh es el ancho del navegador */
+        background-color: rgb(118, 131, 91);
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    .container nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .container nav ul li a{
+        font-size: 20px;
+    }
+    /*#check:checked ~ .checkbtn{   
+    } para cambiar el estilo del boton hamburguer*/ 
+
+}
+
+@media (min-width: 768px) {
+    .container{
+        font-size: 16px;
+        color: black;
+    }
+}
+
+
+/* ------------- CSS General ------------- */
+
+  
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #d9b99b;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #eed9c4;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"]{
+    background-color: #faf0e6;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row input[type="email"] {
+    background-color: #faf0e6;
+    border: 0;
+    border-radius: 6px;
+    width: 55%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #faf0e6;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;
+     }
+
+
+    /* Estilos tarjetas
+.tarjetas-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    }
+    
+    .tarjeta {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    }
+    
+    .tarjeta:hover {
+    transform: scale(1.05);
+    }
+    
+    .tarjeta img {
+    width:100%;
+    height: 150px;
+    object-fit: cover;
+    }
+    
+    .tarjeta h2 {
+    margin: 10px;
+    font-size: 20px;
+    color: #181717;
+    text-align: center;
+    }
+    
+    .tarjeta p {
+    margin: 10px;
+    font-size: 14px;
+    color: #1f1f1f;
+    text-align: center;
+    }
+    
+    .tarjeta a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #e85f46;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    }
+    
+    .tarjeta a:hover {
+    background-color: #46e861;
+    color: #fff;
+    }
+    */
