@@ -14,7 +14,7 @@ let textoTitulo = titulo.innerText;
 console.log(textoTitulo);
 
 if(textoTitulo == "Nombre" ){
-titulo.innerHTML = "Jeje"; }
+titulo.innerHTML = "Sobre mi"; }
 else { console.log("no se cumple"); }
 
 //let Titulo1 = document.querySelector(".logo");
